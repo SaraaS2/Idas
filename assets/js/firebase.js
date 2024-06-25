@@ -1,16 +1,18 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
-
+import {getAuth} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+//import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
-  apiKey: "AIzaSyDiIVLic_s18atZtBaJmTSNDVjqO_7u1FU",
-  authDomain: "turmaterca-d2878.firebaseapp.com",
-  projectId: "turmaterca-d2878",
-  storageBucket: "turmaterca-d2878.appspot.com",
-  messagingSenderId: "179178679657",
-  appId: "1:179178679657:web:ad5cb958aec320facc21f8",
-  measurementId: "G-492TNV85B3"
+  apiKey: "AIzaSyA-puQK16VJnvn_qQAozzvyh2pKhkr_aiY",
+  authDomain: "idas-54ac4.firebaseapp.com",
+  projectId: "idas-54ac4",
+  storageBucket: "idas-54ac4.appspot.com",
+  messagingSenderId: "942140932496",
+  appId: "1:942140932496:web:59628e9757e7df1f7fb315",
+  measurementId: "G-7VLME4005R"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 
