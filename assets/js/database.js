@@ -66,20 +66,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const listarPosts = (conteudos) => {
         onValue(postsRef, (snapshot) => {
             const posts = snapshot.val()
-            divConteudos.innerHTML = ''
+            if(divConteudos){
+                divConteudos.innerHTML = ''
+            }
+            
             if (posts) {
-                const postsIds = Object.keys(posts)
+                const postsIds = Object.keys(posts).sort((a,b)=>b-a)
                 postsIds.forEach((postId) => {
                     const post = posts[postId]
                     const postElement = document.createElement('div')
                     postElement.innerHTML = `
                        <h2 class="mt-5 fw bold text-center text-success">${post.titulo}</h2>
                        <div class="decoration-bar"></div>
+                       <img src="${post.imagemUrl} alt="imagem de ${post.titulo}" class="img-blog
+                       my-5 img-fluid" />
+                       <p>${post.mensagem}</p>
+                       <p class="aling-self-center mt-5" >Publicado em:>${post.data} por ${post.autor}.</p>
+                       <hr/>
                     `
-                    divConteudos.appendChild(postElement)
+                    if(divConteudos){
+                        divConteudos.appendChild(postElement)
+                    }
+                    
                 })
             } else {
-                divConteudos.innerHTML = '<p class="mt-5">Nenhum post encontrado.</p>'
+                if(divConteudos){
+                    divConteudos.innerHTML = '<p class="mt-5">Nenhum post encontrado.</p>'
+                }
+                
             }
         })
     }
