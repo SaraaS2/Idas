@@ -108,14 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     const post = posts[postId]
                     const postElement = document.createElement('div')
                     postElement.innerHTML=`
-                        <button class="btn btn-danger btn-sm mx-3 delete-post" data-id="${post.titulo}"><i class="bi bi-x-circle"></i>Apagar</button>
+                        <button class="btn btn-danger btn-sm mx-3 delete-post" data-id="${postId}"><i class="bi bi-x-circle"></i>Apagar</button>
                         <span class="fw-bold" >${post.titulo}</span><hr>
                     `
                     conteudos.appendChild(postElement)
                 })
                 document.querySelectorAll('.delete-post').forEach((button)=>{
                     button.addEventListener('click',(e)=>{
-                        const postIs = e.target.getAtribute('data-id')
+                        const postId = e.target.getAttribute('data-id')
                         apagarPost(postId)
                     })
                 })
@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Post removido com sucesso')
                 listarPosts(divConteudos)
                 gerenciarPosts(gerenciadorConteudos)
+                console.log(postId)
             })
             .catch((error)=>{
                 console.log(`Erro ao tentar apagar o post ${error}`)

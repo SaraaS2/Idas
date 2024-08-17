@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+h1, h2, h3{
+    color: #012C56;
+}
 .logo-hero{
     width: 200px;
 }
@@ -40,7 +43,7 @@ body{
     margin: 24px auto;
 }
 .animais-extintos{
-    background-image: url('../imagens/animalonca.png');
+    background-image: url('../imagens/imagem3.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

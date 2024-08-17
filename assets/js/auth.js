@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded',() => {
     const formPost = document.querySelector('.form-post')
     const tituloLogin = document.querySelector('.titulo-login')
     const mensagens = document.querySelector('.mensagens')
+    const gerenciadorConteudos = document.querySelector('.gerenciador-conteudos')
 
     
     // função de alerta
@@ -72,11 +73,13 @@ document.addEventListener('DOMContentLoaded',() => {
             if(formLogin) formLogin.classList.add('hide')
             if(formPost) formPost.classList.remove('hide')
             if(tituloLogin) tituloLogin.innerHTML = 'Acesso ao admin liberado'
+            if(gerenciadorConteudos) gerenciadorConteudos.classList.remove('hide')
         }else{
             if(linkSair) linkSair.classList.add('hide')
             if(formLogin) formLogin.classList.remove('hide')
             if(formPost) formPost.classList.add('hide')
             if(tituloLogin) tituloLogin.innerHTML = 'Faça o login com admin!'
+            if(gerenciadorConteudos) gerenciadorConteudos.classList.add('hide')
         }
     })
     
