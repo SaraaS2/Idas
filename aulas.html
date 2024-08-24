@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BioLine</title>
+  <!-- aos animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Descrução -->
   <meta name="description" content="Coloque uma descrição aqui...">
   <!-- Estilo Bootstrap -->
@@ -18,16 +20,8 @@
 
 <body>
   <header class="row px-4">
-    <div class="col-6 col-md-6 col-12">
-      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="BioLine">
-    </div>
-    <div class="redes-sociais col-12 col-md-3 offset-md-3 d-flex justify-content-evenly align-items-center">
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-instagram fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-twitter fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-tiktok fs-4"></i></a></div>
+    <div class="col-6 col-md-6 col-12" data-aos="zoom-in-right" data-aos-duration="1500">
+      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="IDAS">
     </div>
   </header>
   <!-- Navegação -->
@@ -49,16 +43,13 @@
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="ongs.html">Aulas</a>
+            <a class="nav-link" href="aulas.html">Aulas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="registros.html">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="denuncias.html">Aplicativos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato.html">Cursos</a>
+            <a class="nav-link" href="aplicativos.html">Aplicativos</a>
           </li>
           <li class="nav-item link-admin">
             <a href="admin.html" class="nav-link">Admin</a>
@@ -76,22 +67,31 @@
   </nav>
   <!-- Final da navegação -->
 
-  <main class="container conteudos d-flex flex-column justify-content-center align-items-center mt-5">
-    <h2 class=" mt-5 fw-bold text-center text-success">TÍTULO DA POSTAGEM.
-    </h2>
+  <!-- Quando acrescentar uma ONG, duplicar este container e substiruir as informações -->
+  <section class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="https://via.placeholder.com/600x600" alt="Imagem da ONG ..." class="img-ong img-fluid">
+      </div>
+      <div class="col-12 col-md-6">
+        <h2>Nome da ONG</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt quibusdam soluta recusandae voluptates, sequi, quam provident consequuntur magnam perferendis totam veniam quo nisi esse minus quasi distinctio vero velit?
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ad veritatis vero eius hic doloribus sapiente necessitatibus facere placeat architecto culpa quo, repellat illo voluptas fugit a ut soluta ipsa.
+        </p>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="pt-5 text-center">
     <div class="decoration-bar"></div>
-    <img src="https://via.placeholder.com/1000x1000" class="img-blog my-5">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ea at accusamus natus tempore eligendi eveniet ipsam delectus nam, quod similique beatae esse cumque? Similique cumque dolor rem porro animi.
-    Veniam iure obcaecati culpa praesentium impedit necessitatibus adipisci, laboriosam, cum magnam veritatis sint eum nulla. Perspiciatis ea consequatur nulla molestiae! Officia in deserunt maiores doloremque laudantium, laborum voluptate magnam eos!
-    Cum vitae sunt labore ducimus fugit tempore suscipit aliquam rerum quas sequi, natus et odit explicabo omnis aut quibusdam ab commodi facilis voluptate nam ipsum culpa accusamus? Laboriosam, impedit ratione.</p>
-    <p class="align-self-start mt-5">Publicado em: 07/06/2024 por Pessoa que escreveu</p>
-    <hr>
-  </main>
+    <p>Todos os direitos reservados &copy; BioLine - 2024.</p>
+    <div class="decoration-bar"></div>
+  </footer>
 
-   <!-- Firebase -->
-   <script src="./assets/js/firebase.js" type="module"></script>
-   <script src="./assets/js/auth.js" type="module"></script>
-   <script type="module" src="./assets/js/database.js"></script>
+    <!-- Firebase -->
+    <script src="./assets/js/firebase.js" type="module"></script>
+    <script src="./assets/js/auth.js" type="module"></script>
 
   <!-- JQuery -->
   <script src="assets/js/jquery.js"></script>
@@ -101,12 +101,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
-    <footer class="pt-5 text-center">
-      <div class="decoration-bar"></div>
-      <p>Todos os direitos reservados &copy; BioLine - 2024.</p>
-      <div class="decoration-bar"></div>
-    </footer>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 
 </html>

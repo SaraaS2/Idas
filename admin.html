@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BioLine</title>
+  <!-- aos animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Descrução -->
   <meta name="description" content="Coloque uma descrição aqui...">
   <!-- Estilo Bootstrap -->
@@ -18,16 +20,8 @@
 
 <body>
   <header class="row px-4">
-    <div class="col-6 col-md-6 col-12">
-      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="BioLine">
-    </div>
-    <div class="redes-sociais col-12 col-md-3 offset-md-3 d-flex justify-content-evenly align-items-center">
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-instagram fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-twitter fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-tiktok fs-4"></i></a></div>
+    <div class="col-6 col-md-6 col-12" data-aos="zoom-in-right" data-aos-duration="1500">
+      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="IDAS">
     </div>
   </header>
   <!-- Navegação -->
@@ -49,16 +43,13 @@
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="ongs.html">Aulas</a>
+            <a class="nav-link" href="aulas.html">Aulas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="registros.html">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="denuncias.html">Aplicativos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato.html">Cursos</a>
+            <a class="nav-link" href="aplicativos.html">Aplicativos</a>
           </li>
           <li class="nav-item link-admin">
             <a href="admin.html" class="nav-link">Admin</a>
@@ -119,6 +110,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
 </body>

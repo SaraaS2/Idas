@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BioLine</title>
+  <!-- aos animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Descrução -->
   <meta name="description" content="Coloque uma descrição aqui...">
   <!-- Estilo Bootstrap -->
@@ -18,16 +20,8 @@
 
 <body>
   <header class="row px-4">
-    <div class="col-6 col-md-6 col-12">
-      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="BioLine">
-    </div>
-    <div class="redes-sociais col-12 col-md-3 offset-md-3 d-flex justify-content-evenly align-items-center">
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-instagram fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-twitter fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
-            class="bi bi-tiktok fs-4"></i></a></div>
+    <div class="col-6 col-md-6 col-12" data-aos="zoom-in-right" data-aos-duration="1500">
+      <img class="logo-hero" src="assets/imagens/idasimg.jpeg" alt="IDAS">
     </div>
   </header>
   <!-- Navegação -->
@@ -46,16 +40,13 @@
             <a class="nav-link" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ongs.html">Aulas</a>
+            <a class="nav-link" href="aulas.html">Aulas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="registros.html">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="denuncias.html">Aplicativos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato.html">Cursos</a>
+            <a class="nav-link" href="aplicativos.html">Aplicativos</a>
           </li>
           <li class="nav-item link-admin">
             <a href="admin.html" class="nav-link">Admin</a>
@@ -73,32 +64,31 @@
   </nav>
   <!-- Final da navegação -->
   <article class="container">
-    <h2 class=" mt-5 fw-bold text-center ">Inclusão dos deficientes auditivos na sociedade.
+    <h2 class=" mt-5 fw-bold text-center" data-aos="fade" data-aos-duration="2500">Inclusão dos deficientes auditivos na sociedade.
     </h2>
-    <div class="decoration-bar"></div>
+    <div class="decoration-bar" data-aos="fade" data-aos-duration="2500"></div>
   </article>
   <!--  -->
   <section class="container-fluid p-5">
     <article class="animais-extintos row">
-      <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+      <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2000">
         <h3 class="text-light text-center mt-5 p-3">
           O que é inclusão?
         </h3>
         <p class="text-light px-md-4 text-center">
           Inclusão social é o conjunto de meios e ações que combatem a exclusão aos benefícios da vida em sociedade, é o ato de incluir e acrescentar, ou seja, adicionar coisas ou pessoas em grupos e núcleos que antes não faziam parte. Socialmente, a inclusão representa um ato de igualidade entre os diferentes indivíduos que habitam determinada sociedade.
         </p>
-        <a href="#" class="btn btn-light">Saiba Mais</a>
       </div>
       <div class="col-md-6 col-12">
-        <img src="assets/imagens/risco-de-extincao.png" alt="Imagem ilustrativa de animais risico de extinção"
-          class="risco-extincao-img">
+        <img src="assets/imagens/libra.png.png" alt="Imagem ilustrativa de animais risico de extinção"
+          class="risco-extincao-img" data-aos="zoom-in" data-aos-duration="2000">
       </div>
     </article>
     <!--  -->
     <article class="second-theme">
       <div class="container">
-        <h3 class="text-center fw-bold my-5">MAIS UM TÓPICO PARA SER ABORDADO DENTRO DO SITE</h3>
-        <div class="decoration-bar"></div>
+        <h3 class="text-center fw-bold my-5" data-aos="fade" data-aos-duration="2500">Os deficientes auditivos em sociedade</h3>
+        <div class="decoration-bar" data-aos="fade" data-aos-duration="2500"></div>
         <h4 class="text-secondary text-center">Falando sobre (Determinado tema), percebe-se uma falta de senso não só
           populacional quanto também por parte do governo</h4>
         <div class="row my-5">
@@ -159,8 +149,8 @@
       </article>
 
       <article class="sobre my-5 container" id="sobre">
-        <h3 class="text-center fw-bold my-5">Sobre nós</h3>
-        <div class="decoration-bar"></div>
+        <h3 class="text-center fw-bold my-5" data-aos="fade" data-aos-duration="2500">Sobre nós</h3>
+        <div class="decoration-bar" data-aos="fade" data-aos-duration="2500"></div>
 
         <div class="row mt-5">
 
@@ -210,9 +200,9 @@
   </section>
 
   <footer class="pt-5 text-center">
-    <div class="decoration-bar"></div>
-    <p>Todos os direitos reservados &copy; BioLine - 2024.</p>
-    <div class="decoration-bar"></div>
+    <div class="decoration-bar" data-aos="fade" data-aos-duration="2500"></div>
+    <p>Todos os direitos reservados &copy; IDAS - 2024.</p>
+    <div class="decoration-bar" data-aos="fade" data-aos-duration="2500"></div>
   </footer>
 
     <!-- Firebase -->
@@ -227,6 +217,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 
 </html>
