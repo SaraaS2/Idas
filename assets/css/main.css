@@ -97,3 +97,11 @@ form textarea{
     height: 32px;
     
 }
+.card-app{
+    background-color: #012C56;
+    height: 400px;
+}
+.card-app img{
+    border-radius: 50%;
+    max-width: 150px;
+}
