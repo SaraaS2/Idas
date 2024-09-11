@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const postElement = document.createElement('div')
                     const dataFormatada = new Date(post.data).toLocaleDateString('pt-BR')
                     postElement.innerHTML = `
-                       <h2 class="mt-5 fw bold text-center text-success">${post.titulo}</h2>
+                       <h2 class="mt-5 fw bold text-center">${post.titulo}</h2>
                        <div class="decoration-bar"></div>
                        <img src="${post.imagemUrl} alt="imagem de ${post.titulo}" class="img-blog d-block mx-auto
                        my-5 img-fluid" />
